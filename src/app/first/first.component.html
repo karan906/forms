@@ -1,0 +1,43 @@
+<label for=""> FIRST NAME</label> <br>
+<input type="text" [(ngModel)]="Fname">
+<p *ngIf="fNameError">please enter first namme</p>
+<br>
+<label for=""> LAST NAME</label><br>
+<input type="text" [(ngModel)]="Lname">
+<p *ngIf="LnameError">Please enter Last name</p>
+<br>
+<label for="">EMAIL</label> <br>
+<input type="text" [(ngModel)]="email">
+<p *ngIf="emailError">Please enter email</p>
+<br>
+<label for="">CONTACT NO:</label> <br>
+<input type="number" [(ngModel)]="phoneno">
+<p *ngIf="phonenoError">Please enter contact number</p>
+<br>
+<label for="">AGE</label> <br>
+<input type="number" [(ngModel)]="age">
+<p *ngIf="ageError">Please enter AGE</p>
+<br>
+<label for="">GENDER</label> <br>
+<input type="radio" [(ngModel)]="gender" value="MALE">MALE
+<input type="radio" [(ngModel)]="gender" value="FEMALE">FEMALE
+<input type="radio" [(ngModel)]="gender" value="OTHER">OTHER
+<p *ngIf="genderError">Please enter gender</p>
+
+<br><br>
+
+<label for="">COUNTRY</label> <br>
+<select [(ngModel)]="country">
+    <option value=""> SELECTED COUNTRY</option>
+    <option value="INDIA">INDIA</option>
+    <option value="USA">USA</option>
+    <option value="CANADA">CANADA</option>
+
+    <br>
+</select>
+<p *ngIf="countryError">Please enteer country</p>
+<br> <br>
+
+<label for="">BUTTON==></label>
+<!-- <button (click)="clickBTN()" [disabled]="!Fname || !Lname || !email || !phoneno || !age || !gender || !country" >SUBMIT </button> -->
+<button (click)="clickBTN()">SUBMIT </button>
