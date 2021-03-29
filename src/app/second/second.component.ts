@@ -15,6 +15,8 @@ export class SecondComponent implements OnInit {
   age:any;
   gender:any;
   country:any;
+  languages:any;
+  qwalication:any;
   constructor(private service:MyserviceService,private router:Router) { }
 
   ngOnInit(): void {
@@ -25,6 +27,8 @@ export class SecondComponent implements OnInit {
     this.gender= this.service.getGender();
     this.age=this.service.getage();
     this.country= this.service.getCountry();
+    this.languages=this.service.getLANGUAGES();
+    this.qwalication=this.service.getQwalication();
   }
   backPage(){
     console.log(":: click back button");

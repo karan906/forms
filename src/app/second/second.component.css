@@ -1,0 +1,11 @@
+.user-data{
+    margin-left: 35%;
+    color: rgb(242, 3, 3);
+}
+.backbtn{
+    margin-left: 42%;
+    background-color: cadetblue;
+    color: greenyellow;
+    border-radius: 20px;
+ padding: 10px;
+}

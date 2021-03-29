@@ -1,0 +1,30 @@
+.forms{
+    margin-left: 30%;
+    width: 300px;
+}
+.body{
+    background-color:darkgray;
+}
+button{
+    margin-left: 50px;
+    background-color: WHITE;
+    color:  rgb(237, 0, 0);
+}
+input{
+    background-color: WHITE;
+    color: rgb(237, 0, 0);
+    height: 30px;
+    font-size: 30px;
+}
+input{
+    background-color: WHITE;
+    color: rgb(237, 0, 0);
+    font-size: 30px;
+}
+select{
+    background-color: WHITE;
+    color: rgb(237, 0, 0);
+    height: 30px;
+    font-size: 30px;
+}
+

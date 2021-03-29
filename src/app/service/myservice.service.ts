@@ -11,6 +11,8 @@ export class MyserviceService {
   age:any;
   gender:any;
   country:any;
+  languages:any;
+  qwalication:any;
   constructor() { }
   // get set fname
   getFname(){
@@ -61,4 +63,19 @@ export class MyserviceService {
     setCountry(country:any){
       return this.country=country;
     }
+    // get set email
+    getLANGUAGES(){
+      return this.languages;
+    }
+    setLANGUAGES(languages:any){
+      return this.languages=languages;
+    }
+    // get set email
+    getQwalication(){
+      return this.qwalication;
+    }
+    setQwalication(qwalication:any){
+      return this.qwalication=qwalication;
+    }
 }
+

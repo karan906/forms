@@ -1,43 +1,69 @@
-<label for=""> FIRST NAME</label> <br>
-<input type="text" [(ngModel)]="Fname">
-<p *ngIf="fNameError">please enter first namme</p>
-<br>
-<label for=""> LAST NAME</label><br>
-<input type="text" [(ngModel)]="Lname">
-<p *ngIf="LnameError">Please enter Last name</p>
-<br>
-<label for="">EMAIL</label> <br>
-<input type="text" [(ngModel)]="email">
-<p *ngIf="emailError">Please enter email</p>
-<br>
-<label for="">CONTACT NO:</label> <br>
-<input type="number" [(ngModel)]="phoneno">
-<p *ngIf="phonenoError">Please enter contact number</p>
-<br>
-<label for="">AGE</label> <br>
-<input type="number" [(ngModel)]="age">
-<p *ngIf="ageError">Please enter AGE</p>
-<br>
-<label for="">GENDER</label> <br>
-<input type="radio" [(ngModel)]="gender" value="MALE">MALE
-<input type="radio" [(ngModel)]="gender" value="FEMALE">FEMALE
-<input type="radio" [(ngModel)]="gender" value="OTHER">OTHER
-<p *ngIf="genderError">Please enter gender</p>
 
-<br><br>
-
-<label for="">COUNTRY</label> <br>
-<select [(ngModel)]="country">
-    <option value=""> SELECTED COUNTRY</option>
-    <option value="INDIA">INDIA</option>
-    <option value="USA">USA</option>
-    <option value="CANADA">CANADA</option>
-
+<div class="body">
+    <div class="forms">
+      <I>  <label for=""> FIRST NAME</label> <br></I>
+    <input type="text" [(ngModel)]="Fname">
+    <p *ngIf="fNameError">please enter first namme</p>
     <br>
-</select>
-<p *ngIf="countryError">Please enteer country</p>
-<br> <br>
+  <I>  <label for=""> LAST NAME</label><br></I>
+    <input type="text" [(ngModel)]="Lname">
+    <p *ngIf="LnameError">Please enter Last name</p>
+    <br>
+   <I> <label for="">EMAIL</label> <br></I>
+    <input type="text" [(ngModel)]="email">
+    <p *ngIf="emailError">Please enter email</p>
+    <br>
+    <I><label for="">CONTACT NO:</label> <br></I>
+    <input type="number" [(ngModel)]="phoneno">
+    <p *ngIf="phonenoError">Please enter contact number</p>
+    <br>
+   <I> <label for="">AGE</label> <br></I>
+    <input type="number" [(ngModel)]="age">
+    <p *ngIf="ageError">Please enter AGE</p>
+    <br>
+ <I>   <label for="">GENDER</label> <br></I>
+    <input class="gen" type="radio" [(ngModel)]="gender" value="MALE">MALE
+    <input class="gen"  type="radio" [(ngModel)]="gender" value="FEMALE">FEMALE
+    <input class="gen"  type="radio" [(ngModel)]="gender" value="OTHER">OTHER
+    <p *ngIf="genderError">Please enter gender</p>
+    
+    <br><br>
+   <I> 
+    <label for="">COUNTRY</label> <br></I>
+    <select [(ngModel)]="country">
+        <option value=""> SELECTED COUNTRY</option>
+        <option value="INDIA">INDIA</option>
+        <option value="USA">USA</option>
+        <option value="CANADA">CANADA</option>
+    
+        <br>
+    </select>
+    <p *ngIf="countryError">Please enteer country</p>
+    <br> <br>
+    <I><label for="">LANGUAGES</label><br></I>
+    <select [(ngModel)]="languages">
+        <option value="">SELECT--LANGUAGES</option>
+        <option value="ENGLISH">ENGLISH</option>
+        <option value="HINDI">HINDI</option>
+        <option value="PUNJABI">PUNJABI</option>
+    </select>
+    <p *ngIf="languagesError">please select the languages</p>
 
-<label for="">BUTTON==></label>
-<!-- <button (click)="clickBTN()" [disabled]="!Fname || !Lname || !email || !phoneno || !age || !gender || !country" >SUBMIT </button> -->
-<button (click)="clickBTN()">SUBMIT </button>
+    <br><br>
+  <I>  <label for="">QWALICATION</label> <br></I>
+    <select [(ngModel)]="qwalication">
+        <option value="">SELECTED__CLASSES</option>
+        <option value="BCA">BCA</option>
+        <option value="BED">BED</option>
+        <option value="BCOM">BCOM</option>
+        <option value="BBA">BBA</option>
+    
+    </select> 
+    <p *ngIf="qwalicationError">Please select your Qwalication</p>
+
+    <br><br>
+    
+    <!-- <button (click)="clickBTN()" [disabled]="!Fname || !Lname || !email || !phoneno || !age || !gender || !country" >SUBMIT </button> -->
+    <button (click)="clickBTN()">SUBMIT </button>
+    </div>
+</div>
